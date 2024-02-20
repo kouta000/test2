@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>test</title>
+    </head>
+    <body>
+        <script>
+            var youbi = ['日曜日','月曜日','火曜日','水曜日','木曜日','金曜日','土曜日'];
+            for(var i=0; i<7; i++){
+                var date = new Date(2018, 0, i);
+                document.write('<p>' + date.toLocaleString() + 'は' +youbi[date.getDay()] + '</p>');
+            }
+        </script>
+    </body>
+</html>
